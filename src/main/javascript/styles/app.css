@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(146, 82, 82);
+    text-decoration: underline;
+    font-family: fantasy;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    padding-top: 70px;
+}
+
+
+
+ul {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 1em;
+    flex-direction: column;
+    margin: 50px;
+}
+
+li {
+    display: block;
+    background-color: #f7f7f7;
+    margin: 10px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+.deleteButton {
+    background-color: rgb(253, 78, 78);
+    margin: 15px;
+    border-radius: 2px;
+    color: white;
+    border-width: 0px;
+}
+
+.deleteButton:hover {
+    color: red;
+    background-color: white;
+    border-color: white;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 4px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+
+}
+
+.button:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+input.input {
+    border-radius: 8px;
+    padding: 0px 30px 0px 30px;
+}
+
+input[type="checkbox" i] {
+    border-radius: 10px;
+    background-color: azure;
+    margin: 10px 0px 0px 8px;
+    height: 17px;
+}
+
+.input:hover {
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.completed-task {
+    text-decoration: line-through rgb(85, 85, 85);
+    background-color: #01b1452c;
+    color: rgb(0, 196, 114);
+}
+
+@media (max-width: 650px) {
+    form {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        padding: 0px 30px 0px 30px;
+    }
+
+    input.input {
+        padding: 15px 0px 15px 0px;
+        border-radius: 8px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        font-size: 0.85em;
+        display: flex;
+        flex-direction: column;
+        padding: revert
+    }
+
+    .deleteButton {
+        background-color: rgb(250, 66, 66);
+        margin: 15px;
+        border-radius: 2px;
+        color: white;
+        border-width: 0px;
+    }
+
+
+    input[type="checkbox" i] {
+        border-radius: 10px;
+        background-color: azure;
+        margin: 10px 0px 0px 8px;
+        height: 17px;
+        width: -webkit-fill-available;
+    }
+
+}

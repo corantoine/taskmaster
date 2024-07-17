@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 400px;
+    /* background-color: rgb(129, 214, 248); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 10em;
+    border-color: red;
+    flex-direction: column;
+    background-color: rgb(151, 220, 247);
+    padding: 40px;
+    border-radius: 5px;
+
+}
+
+/* form{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    background-color: rgb(151, 220, 247);
+    align-content: flex-start;
+} */
+
+h3{
+    padding: 2px;
+    margin: 3px;
+    text-align: center;
+}
+
+input[type="text"]{
+    padding: 2px;
+    margin: 3px;
+}
+
+input[type="password"]{
+    padding: 2px;
+    margin: 3px;
+}
+
+
+
+button{
+    padding: 5px;
+    margin: 4px;
+    background-color: azure;
+    border-radius: 6px;
+}
