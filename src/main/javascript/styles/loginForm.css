@@ -1,23 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
-    height: 400px;
-    /* background-color: rgb(129, 214, 248); */
+div .form-container {
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-form{
-    width: 10em;
-    border-color: red;
+div .form-container .login-form {
     flex-direction: column;
-    background-color: rgb(151, 220, 247);
-    padding: 40px;
-    border-radius: 5px;
+    background-color: rgb(234 249 255);
+    padding: 35px;
+    border-radius: 50px;
+    border: solid 3px;
+    margin-top: 8em;
 
 }
 
@@ -30,27 +29,50 @@ form{
     align-content: flex-start;
 } */
 
-h3{
+h3 {
     padding: 2px;
     margin: 3px;
     text-align: center;
+    font-family: monospace;
+    font-size: xx-large;
 }
 
-input[type="text"]{
-    padding: 2px;
+input[type="text"] {
+    padding: 4px;
     margin: 3px;
-}
-
-input[type="password"]{
-    padding: 2px;
-    margin: 3px;
-}
-
-
-
-button{
-    padding: 5px;
-    margin: 4px;
-    background-color: azure;
     border-radius: 6px;
+}
+
+input[type="text"]:hover {
+    background-color: #f0f0f0;
+    border: solid 2px;
+}
+
+input[type="password"] {
+    padding: 4px;
+    margin: 3px;
+    border-radius: 6px;
+}
+
+input[type="password"]:hover {
+    background-color: #f0f0f0;
+    border: solid 2px;
+}
+
+button {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: rgb(129, 198, 255);
+    border-radius: 6px;    
+    color: white;
+    border: solid;
+    zoom: 110%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(129, 198, 255);
+    zoom: 120%;
+    font-weight: bold;
+
 }

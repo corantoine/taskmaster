@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-h1 {
-    color: rgb(146, 82, 82);
-    text-decoration: underline;
-    font-family: fantasy;
-    text-align: center;
-}
 
 h2 {
     text-align: center;
@@ -17,9 +11,17 @@ h2 {
     padding-top: 70px;
 }
 
+div .task-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
 
 
-ul {
+
+
+ ul {
     display: flex;
     font-family: sans-serif;
     font-size: 1em;
@@ -28,12 +30,18 @@ ul {
 }
 
 li {
-    display: block;
-    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #def7ff;
     margin: 10px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 3px;
-}
+    padding: 15px 10px 3px 10px;
+    border-radius: 10px;
+    max-width: 450px;
+    white-space: normal
+    ;
+} 
 
 .deleteButton {
     background-color: rgb(253, 78, 78);
@@ -60,7 +68,7 @@ form {
     margin: 4px;
     padding: 10px;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #882222;
 
 }
 
@@ -70,7 +78,7 @@ form {
     cursor: pointer;
 }
 
-input.input {
+input .input {
     border-radius: 8px;
     padding: 0px 30px 0px 30px;
 }
@@ -80,11 +88,14 @@ input[type="checkbox" i] {
     background-color: azure;
     margin: 10px 0px 0px 8px;
     height: 17px;
+    width: 40px;
 }
 
-.input:hover {
-    border-radius: 10px;
-    background-color: azure;
+input[type="date"] {
+    border-radius: 8px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .completed-task {
@@ -92,6 +103,19 @@ input[type="checkbox" i] {
     background-color: #01b1452c;
     color: rgb(0, 196, 114);
 }
+
+.showDate{
+    color: red;
+    FONT-FAMILY: cursive;
+    font-size: smaller;
+}
+
+.showName{
+    color: blueviolet;
+    font-size: large;
+    font-family: monospace;
+}
+
 
 @media (max-width: 650px) {
     form {

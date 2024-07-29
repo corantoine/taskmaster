@@ -1,18 +1,15 @@
 import "../styles/loginForm.css"
-import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
 
-    // const navigate = useNavigate();
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-    }
+        e.preventDefault(); }
 
 
     return (
-        <div className="container">
-            <form action="submit" onSubmit={handleSubmit}>
+        <div className="form-container">
+            <form className="login-form" action="submit" onSubmit={handleSubmit}>
                     <h3> Connexion </h3>
 
                     <input

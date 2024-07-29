@@ -1,4 +1,4 @@
-package fr.maif.toDoApp.models;
+package fr.maif.todoapp.models;
 
 import java.util.List;
 

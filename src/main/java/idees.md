@@ -1,0 +1,1 @@
+Si je veux créer des "types" pour mes tâches -> je dois créer une enum ?

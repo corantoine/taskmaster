@@ -1,9 +1,10 @@
-//FIXME : pourquoi export ?
+import { baseApi } from '../apiConfig';
+
+
+
 export async function createTask(nom, dueDate, taskCompleted) {
-  // Creer une variable avec l'URL cible
-  const url = "http://localhost:8080/tasks";
-  // Request : interface de l'API Fetch représentant une demande de ressource
-  const myRequest = new Request(url);
+
+  const taskURL = new URL(baseApi, "/tasks")
 
   /* Options pour la requête (par exemple, le corps de la requête)
    dans cette variable on définit la méthode utilisée et le contenu 
@@ -11,7 +12,7 @@ export async function createTask(nom, dueDate, taskCompleted) {
   const option = {
     //Type de la méthode
     method: "POST",
-    //Contenu envoyé et  ?
+    //Informations sur les données envoyées et attendues en retour
     headers: {
       "Content-Type": "application/json",
       "Accept": "application/json",
@@ -26,16 +27,14 @@ export async function createTask(nom, dueDate, taskCompleted) {
 
   //gestion d'erreur try... catch
   try {
-    const response = await fetch(myRequest, option);
+    const response = await fetch(taskURL, option);
     if (!response.ok) {
       throw new Error(`HTTP error! Status: ${response.status}`)
     }
-
-    alert('User created successfully!');
-
+    alert('Task created successfully!');
   } catch (error) {
     // console.error("Erreur de récupération des données :", error.message);
-    alert('User creation aborted!');
+    alert('Task creation aborted!');
     throw error;
   }
 

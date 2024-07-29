@@ -1,4 +1,4 @@
-package messages;
+package fr.maif.todoapp.messages;
 
 import java.time.LocalDateTime;
 

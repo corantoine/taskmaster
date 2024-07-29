@@ -8,7 +8,7 @@ export default function Header() {
       </nav>
       <section className="hero">
         <h1>Task Master</h1>
-        <p>L'appli qui vous aidera à réaliser vos tâches !</p>
+        <h4>L'appli qui vous aidera à réaliser vos tâches !</h4>
       </section>
     </header>
   );
