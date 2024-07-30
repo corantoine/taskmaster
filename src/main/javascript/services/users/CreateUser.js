@@ -14,6 +14,7 @@ export async function CreateUser(pseudo, prenom, nom, pays, email, password) {
         headers: {
             "Content-Type": "application/json",
             "Accept": "application/json",
+            "Origin": "http://localhost:3000"
         },
         body: JSON.stringify({
             //dénominations back/front pour faire la correspondance des données
