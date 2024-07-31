@@ -1,10 +1,27 @@
+import { useNavigate } from "react-router-dom";
 import "../styles/loginForm.css"
 
-export default function LoginForm() {
+const LoginForm = () => {
+        const navigate = useNavigate();
 
+    const handleSubmit = 
+    async (e) => {
+        e.preventDefault(); 
+    
+        const {pseudo, password} = Object.fromEntries(
+            new FormData(e.target)
+        );
 
-    const handleSubmit = (e) => {
-        e.preventDefault(); }
+        try {
+            if (condition) {
+                
+            }
+            
+        } catch (error) {
+            
+        }
+
+    }
 
 
     return (
