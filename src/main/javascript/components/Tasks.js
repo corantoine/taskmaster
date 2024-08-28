@@ -18,13 +18,15 @@ function Tasks() {
   // const [taskCompleted, setTaskCompleted] = useState(false);
 
   // comportement
+  // ici on passe l'id en paramètre de la fonction
   const handleDelete = (id) => {
-    // ici on passe l'id en paramètre de la fonction
+    //on utilise le spread operator pour créer une copie du tableau
     const taskCopy = [...tasks];
 
     // ici on veut filtrer par id pour supprimer la tâche selectionnée
-    // On garde toutes les tâches dont l'id est différent de celui sélectionné    
+    // On filtre les tâches pour exclure celle dont l'identifiant correspond à id 
     const taskCopyUpdated = taskCopy.filter(task => task.id !== id)
+    // On met à jour l'état "tasks" avec le nouveau tableau filtré
     setTasks(taskCopyUpdated)
 
   }
