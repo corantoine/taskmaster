@@ -7,7 +7,7 @@ export async function createTask(nom, dueDate, taskCompleted) {
   const taskURL = new URL(baseApi, "/tasks")
 
   /* Options pour la requête (par exemple, le corps de la requête)
-   dans cette variable on définit la méthode utilisée et le contenu 
+   dans cette variable on défini la méthode utilisée et le contenu
    envoyé et qu'on attend en réponse */
   const option = {
     //Type de la méthode
